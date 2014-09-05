@@ -1,10 +1,15 @@
-CodeBook for Getting & Cleaning Data Course Project
 Kuan B.
+CodeBook for Getting & Cleaning Data Course Project
 --
 &nbsp;
 
 
-This file describes the variables in the resulting tidy dataset obtained by running **run_analysis.R**. Information is stored in the `dataTidy` R object. As stated in the Readme file, additional information may be obtained regarding the original dataset [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+Variables created by running **run_analysis.R** from the repo.  
+
+Note: Full background on the original dataset [here](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones).
+
+
+
 
 Data set authors description of contents:
 
