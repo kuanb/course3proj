@@ -14,7 +14,7 @@ Note: Full background on the original dataset [here](http://archive.ics.uci.edu/
 Data set authors description of contents:
 
 ```
-Readme.txt
+About Readme.txt
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -22,7 +22,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 ```
 
 ```
-features_info.txt
+About features_info.txt
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -41,19 +41,17 @@ Categories
 --
 &nbsp;
 
-* **Origin** - determines from which original dataset ("TRAINING" or "TEST") this record was derived.
+Two data sets used within the data. These ("TRAINING" or "TEST") were combined to create the data used. Resulting data is sorted by 2 categories:
 
-* **Subject** - identifies the subject for this particular reading (1 to 30).
-
-* **Activity** - factor indicating what the subject was doing as the values were recorded. Can be one of "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING" or "LAYING".
+1. Subject: 30 subjects, each is numbered 1 - 30
+2. Activity: There are 6 types of activities each could be doing: "WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING" or "LAYING".
 
 &nbsp;
-Metrics / 'Features'
+Column Vals
 --
 
-All of these are normalized and bounded within [-1; 1].
-As stated in the authors' description above, `f-` prefixd features denote frequency, while `t-` prefixed ones, time.
-Of the 561 features present in the original dataset, only those whose names contain **mean()** or **std()** were kept, as per the project description. They are:
+All vals normalized and bounded within [-1; 1]. `f-` prefixd features denote frequency, while `t-` prefixed ones, time.
+561 original vars, but only ones with mean or std were kept in final output, which results in these:
 
 
 * tBodyAcc-mean()-X
