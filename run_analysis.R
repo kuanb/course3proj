@@ -76,3 +76,5 @@ finDF["subj_num"] <- NULL
 
 # Finally write to a .txt file
 write.table(finDF, "tidy.txt", sep="\t")
+
+t <- read.table("/Users/kuanbutts/Documents/MIT/Summer2014/Coursera/Course 3/course3proj/tidy.txt")
